@@ -6,4 +6,3 @@ vim.cmd.colorscheme("kanagawa-wave")
 vim.o.hlsearch = false
 -- enable mouse mode
 vim.o.mouse = 'a'
-
