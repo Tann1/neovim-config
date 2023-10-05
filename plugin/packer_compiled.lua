@@ -74,15 +74,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["bg.nvim"] = {
+  harpoon = {
     loaded = true,
-    path = "/home/tann/.local/share/nvim/site/pack/packer/start/bg.nvim",
-    url = "https://github.com/typicode/bg.nvim"
-  },
-  ["melange-nvim"] = {
-    loaded = true,
-    path = "/home/tann/.local/share/nvim/site/pack/packer/start/melange-nvim",
-    url = "https://github.com/savq/melange-nvim"
+    path = "/home/tann/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/theprimeagen/harpoon"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -94,15 +89,15 @@ _G.packer_plugins = {
     path = "/home/tann/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  playground = {
+    loaded = true,
+    path = "/home/tann/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/tann/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["sherbet.nvim"] = {
-    loaded = true,
-    path = "/home/tann/.local/share/nvim/site/pack/packer/start/sherbet.nvim",
-    url = "https://github.com/lewpoly/sherbet.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

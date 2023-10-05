@@ -13,8 +13,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use "lewpoly/sherbet.nvim"
-  use "typicode/bg.nvim" 
-  use "savq/melange-nvim"
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use 'nvim-treesitter/playground'
+  use 'theprimeagen/harpoon'
 end)
