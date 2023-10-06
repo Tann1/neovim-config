@@ -37,4 +37,8 @@ return require('packer').startup(function(use)
     use 'projekt0n/github-nvim-theme'
     use 'rebelot/kanagawa.nvim'
     use 'akinsho/toggleterm.nvim'
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end)
