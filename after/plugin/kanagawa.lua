@@ -10,8 +10,6 @@ if not status_ok then
 end
 colors = colors.setup()
 local palette = colors.palette
-print(colors)
-print(palette.lightBlue)
 kanagawa.setup({
     colors = {
         theme = {
