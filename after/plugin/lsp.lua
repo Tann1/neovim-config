@@ -16,15 +16,29 @@ lsp_zero.on_attach(function(client, bufnr)
 end)
 
 require('mason').setup({})
+local nvim_lsp = require('lspconfig')
+local handlers = {
+    lsp_zero.default_setup,
+    ["lua_ls"] = function ()
+       local lua_opts = lsp_zero.nvim_lua_ls()
+       nvim_lsp.lua_ls.setup(lua_opts)
+    end,
+    ["svlangserver"] = function ()
+       nvim_lsp.svlangserver.setup({
+           on_init = function (client)
+                client.config.settings.systemverilog = {
+                    includeIndexing     = {"**/*.{sv,svh}"},
+                    excludeIndexing     = {"sim/**/*.sv*"},
+                    defines             = {},
+                    launchConfiguration = "verilator -sv -Wall -Wno-style --lint-only"
+                }
+           end
+       })
+    end
+}
 require('mason-lspconfig').setup({
   ensure_installed = {'tsserver', 'rust_analyzer'},
-  handlers = {
-    lsp_zero.default_setup,
-    lua_ls = function()
-      local lua_opts = lsp_zero.nvim_lua_ls()
-      require('lspconfig').lua_ls.setup(lua_opts)
-    end,
-  }
+  handlers = handlers
 })
 
 local cmp = require('cmp')
