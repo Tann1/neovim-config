@@ -15,8 +15,11 @@ kanagawa.setup({
         theme = {
             all = {
                 ui = {
+                    fg = "#e0e0de",
+                    bg = "#000000",
                     bg_gutter = "none",
-                    nontext = palette.lightBlue
+                    nontext = palette.lightBlue,
+                    whitespace = palette.lightBlue
                 }
             }
         }
