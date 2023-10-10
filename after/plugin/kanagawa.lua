@@ -11,6 +11,7 @@ end
 colors = colors.setup()
 local palette = colors.palette
 kanagawa.setup({
+    typeStyle = {bold = true},
     colors = {
         theme = {
             all = {
