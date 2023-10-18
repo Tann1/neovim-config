@@ -7,3 +7,7 @@ vim.keymap.set('n', '<leader>ps', function() -- p -> project; s -> search
 end)
 vim.keymap.set('n', '<leader>pb', builtin.buffers, {}) -- p -> project; b -> buffers
 vim.keymap.set('n', '<leader>prf', builtin.oldfiles, {}) -- p -> project; r -> recent -> f -> files
+vim.keymap.set('n', '<leader>vk', builtin.keymaps, {}) -- v -> vim; k -> keymaps
+vim.keymap.set('n', '<leader>lr', builtin.lsp_references, {}) -- l -> lsp; r -> references
+vim.keymap.set('n', '<leader>li', builtin.lsp_incoming_calls, {}) -- l -> lsp; i -> incoming calls
+vim.keymap.set('n', '<leader>lo', builtin.lsp_outgoing_calls, {}) -- l -> lsp; o -> outgoing calls
