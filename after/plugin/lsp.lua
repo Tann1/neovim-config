@@ -51,11 +51,14 @@ cmp.setup({
     {name = 'nvim_lsp'},
     {name = 'nvim_lua'},
   },
-  formatting = require("lspkind").cmp_format({
+  formatting = {
+    fields = {'abbr', 'kind', 'menu'},
+    format = require("lspkind").cmp_format({
     mode = 'symbol',
     maxwidth = 50,
     ellipsis_char = '...'
-  }),
+    })
+  },
   mapping = cmp.mapping.preset.insert({
     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
