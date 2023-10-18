@@ -11,9 +11,7 @@ end
 colors = colors.setup()
 local palette = colors.palette
 kanagawa.setup({
-    compile = true,
     keywordStyle = {},
-    dimInactive = true,
     colors = {
         theme = {
             all = {
@@ -21,8 +19,8 @@ kanagawa.setup({
                     fg = "#e0e0de",
                     bg = "#000000",
                     bg_gutter = "none",
-                    nontext = palette.lightBlue,
-                    whitespace = palette.lightBlue
+                    nontext = palette.waveRed,
+                    whitespace = palette.waveRed
                 }
             }
         }
