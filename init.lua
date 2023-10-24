@@ -6,6 +6,8 @@ vim.o.hlsearch = false
 vim.o.mouse = 'a'
 
 vim.cmd("colorscheme kanagawa-wave")
+
+vim.diagnostic.config({underline = false})
 vim.api.nvim_create_user_command(
   'DiagnosticsToggleVirtualText',
   function()
