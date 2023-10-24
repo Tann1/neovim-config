@@ -6,3 +6,4 @@ vim.o.hlsearch = false
 vim.o.mouse = 'a'
 
 vim.cmd("colorscheme kanagawa-wave")
+vim.diagnostic.config({signs = false})
