@@ -38,7 +38,7 @@ local handlers = {
     end
 }
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer'},
+  ensure_installed = {'clangd'},
   handlers = handlers
 })
 
