@@ -5,7 +5,7 @@ vim.o.hlsearch = false
 -- enable mouse mode
 vim.o.mouse = 'a'
 
-vim.cmd("colorscheme kanagawa-wave")
+vim.cmd("colorscheme github_light")
 
 vim.diagnostic.config({underline = false})
 vim.api.nvim_create_user_command(
