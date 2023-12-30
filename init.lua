@@ -21,3 +21,4 @@ vim.api.nvim_create_user_command(
   {}
 )
 vim.keymap.set("n", "<leader>td", vim.cmd.DiagnosticsToggleVirtualText) -- t -> toggle; d -> diagnostics
+vim.keymap.set("n", "<leader>so", vim.cmd.SymbolsOutline) -- -> s -> symbols; o -> outline
